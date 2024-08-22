@@ -9,7 +9,7 @@
                 </div>
                 <div class="card-body">
                     <ul>
-                        <li>ที่อยู่ : {{$address}}</li>
+                        <li>ที่อยู่ร้าน : {{$address}}</li>
                         <li>เบอร์ : {{$mobilephone}}</li>
                         <li>ที่ตั้ง : {{$location}}</li>
                     </ul>
