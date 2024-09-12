@@ -33,4 +33,3 @@ class ProductsTableSeeder extends Seeder
             DB::table('products')->insert($data);
     }
 }
-

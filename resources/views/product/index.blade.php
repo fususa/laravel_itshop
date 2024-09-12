@@ -48,11 +48,13 @@
                                             <form action="{{ route('product_types.destroy', $product_ty->id) }}" method="POST">
                                                 @csrf
                                                 @method('DELETE')
+                                                @auth
                                                 <a href="#" class="btn btn-outline-success px-3 py-2"><i
                                                         class="fa fa-pencil"></i> แก้ไข</a>
                                                 <button type="submit" class="btn btn-outline-danger px-3 py-2"
                                                     onclick="return confirm('คุณต้องการลบข้อมูลหรือไม่?')"><i
                                                         class="fa fa-trash"></i> ลบ</button>
+                                                @endauth
                                             </form>
                                         </td>
                                     </tr>

@@ -8,9 +8,13 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
-{
+{    
     use HasFactory, Notifiable;
-
+    
+    public function isAdmin(){
+        return $this->user_type === 2;
+    }
+   
     /**
      * The attributes that are mass assignable.
      *
